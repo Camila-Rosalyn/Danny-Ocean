@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding-bottom: 130px;
+}
+
+.paginaRegistro{
+    display: flex;
+    height: 100vh;
+}
+
+.imagen{
+    width: 50%;
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.formulario{
+    width: 50%;
+    background-color: #ffffff;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.formulario h2{
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.formulario p{
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+
+.campoRelleno{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campoRelleno label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.campoRelleno input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.opciones-radio{
+    display: flex;
+    gap: 10px;
+}
+
+
+.botones-formulario{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.botones-formulario button{
+    padding: 8px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.botones-formulario button[type="reset"]{
+    background-color: gray;
+}
+
+.botones-formulario button[type="button"]{
+    background-color: #444;
+}
+@keyframes aparecerDerecha {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.paginaRegistro .formulario {
+    animation: aparecerDerecha 1.2s ease-out;
+}

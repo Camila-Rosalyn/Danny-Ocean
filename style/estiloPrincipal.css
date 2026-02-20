@@ -77,3 +77,6 @@ aside{
 .tablaFotos img {
     filter: grayscale(20%);
 }
+.videoYoutube{
+    text-align: center;
+}
